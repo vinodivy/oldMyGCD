@@ -1,5 +1,7 @@
 # MyGCD
 
+Download the zip package from git and import the MyGCD-master folder to eclipse or run from cmd prompt "mvn clean install" from MyGCD-master folder.
+
 Project tech stack involves 
 
 Java 8,
