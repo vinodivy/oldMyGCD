@@ -36,6 +36,7 @@ The project exposes two APIS - one is a restful webservice and the other is SOAP
 Restful webservice exposes two apis - 
 
 •	push-	which returns the status of the request to the caller as a String. The two parameters will be added to a JMS queue.
+
 • list-	which returns a list of all the elements ever added to the queue from a database in the order added as a JSON structure. 
 
 SOAP webservice exposes three apis
