@@ -22,6 +22,35 @@ MyGCD-master folder and run from cmd prompt "mvn clean install".
 • Deploy the file into JBOSS AS 7.0.0 server. Setup Jboss 7 server in eclipse and right click on the GCDEar project and 
 Select Run As -> Run on server and select the configured Jboss 7 server and click finish.
 
+## Database setup
+
+Download MySQL 5.x and log in as a root user. 
+
+Modify the database schema/username/password in the GCDService project -> src/resource/jdbc.properties 
+
+Create the following tables using the DDL commands.
+
+CREATE TABLE `gcd`.`gcd` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `gcd` int(12) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+============================================================
+CREATE TABLE `gcd`.`inputnumber` (
+  `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `number1` int(11) DEFAULT NULL,
+  `number2` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=125 DEFAULT CHARSET=utf8;
+
+## ActiveMQ setup
+
+Download ActiveMQ from http://activemq.apache.org/activemq-5152-release.html
+
+Extract the folder and goto bin folder
+
+type "activemq start"
+
 ### Project tech stack involves 
 
 Java 8,
