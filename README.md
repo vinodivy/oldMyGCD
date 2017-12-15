@@ -35,7 +35,7 @@ CREATE TABLE `gcd`.`gcd` (
   `gcd` int(12) DEFAULT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
-============================================================
+
 CREATE TABLE `gcd`.`inputnumber` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
   `number1` int(11) DEFAULT NULL,
