@@ -6,7 +6,10 @@ Download the zip package from git and unzip. You can run either from eclipse or 
 
 ## Import to Eclipse
 
-Import the MyGCD-master folder to eclipse 
+Import the MyGCD-master folder to eclipse. You should be able to view three projects
+• GCDEar
+• GCDParent
+• GCDService
 
 OR
 
