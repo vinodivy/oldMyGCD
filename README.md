@@ -1,6 +1,18 @@
 # MyGCD
 
-Download the zip package from git and import the MyGCD-master folder to eclipse or run from cmd prompt "mvn clean install" from MyGCD-master folder.
+# Deployment methods:
+
+Download the zip package from git and unzip. You can run either from eclipse or Windows Command Prompt
+
+## Import to Eclipse
+
+Import the MyGCD-master folder to eclipse 
+
+OR
+
+## CMD Prompt
+
+MyGCD-master folder and run from cmd prompt "mvn clean install".
 
 Project tech stack involves 
 
@@ -22,7 +34,6 @@ SOAP webservice exposes three apis
 •	gcdList- which returns a list of all the computed greatest common divisors from a database. 
 •	gcdSum- which returns the sum of all computed greatest common divisors from a database.
 
-Compile the whole project from the root folder MyGcd using "mvn clean install". and the .ear file will be created in GCDEar project.<target> folder
 Deploy the file into JBOSS AS 7.0.0 server and type the following URL
 
 For local deployment:
