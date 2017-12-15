@@ -17,7 +17,12 @@ OR
 
 MyGCD-master folder and run from cmd prompt "mvn clean install".
 
-Project tech stack involves 
+.ear file will be generated in GCDEar project's target folder.
+
+• Deploy the file into JBOSS AS 7.0.0 server. Setup Jboss 7 server in eclipse and right click on the GCDEar project and 
+Select Run As -> Run on server and select the configured Jboss 7 server and click finish.
+
+### Project tech stack involves 
 
 Java 8,
 Maven 3.5,
@@ -37,7 +42,7 @@ SOAP webservice exposes three apis
 •	gcdList- which returns a list of all the computed greatest common divisors from a database. 
 •	gcdSum- which returns the sum of all computed greatest common divisors from a database.
 
-Deploy the file into JBOSS AS 7.0.0 server and type the following URL
+and type the following URL
 
 For local deployment:
 
