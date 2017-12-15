@@ -41,7 +41,9 @@ Restful webservice exposes two apis -
 SOAP webservice exposes three apis
 
 •	gcd- which returns the greatest common divisor* of the two integers at the head of the queue. These two elements will subsequently be discarded from the queue and the head replaced by the next two in line.
+
 •	gcdList- which returns a list of all the computed greatest common divisors from a database. 
+
 •	gcdSum- which returns the sum of all computed greatest common divisors from a database.
 
 and type the following URL
@@ -51,7 +53,9 @@ For local deployment:
 Rest services
 
 http://localhost:8080/GCDService/rest/list
+
 http://localhost:8080/GCDService/rest/push
 
 Soap Services
+
 http://localhost:8080/GCDService/endpoint/gcdService.wsdl
