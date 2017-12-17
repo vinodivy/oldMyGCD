@@ -19,8 +19,11 @@ JBOSS AS 7.0.0 Final
 Download the zip package from git and unzip.
 
 After unzipping, you should be able to view three projects
+
 • GCDEar
+
 • GCDParent
+
 • GCDService
 
 Goto MyGCD-master folder and run from cmd prompt "mvn clean install".
