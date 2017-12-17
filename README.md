@@ -1,21 +1,24 @@
 # MyGCD
 
+# Project tech stack involves 
+
+Java 8,
+Maven 3.5,
+Spring 4.1.4,
+MySQL 5 +,
+ActiveMQ 5.15.2,
+JBOSS AS 7.0.0 Final
+
 # Deployment methods:
 
 Download the zip package from git and unzip. You can run either from eclipse or Windows Command Prompt
 
-## Import to Eclipse
-
-Import the MyGCD-master folder to eclipse. You should be able to view three projects
+After unzipping, you should be able to view three projects
 • GCDEar
 • GCDParent
 • GCDService
 
-OR
-
-## CMD Prompt
-
-MyGCD-master folder and run from cmd prompt "mvn clean install".
+Goto MyGCD-master folder and run from cmd prompt "mvn clean install".
 
 .ear file will be generated in GCDEar project's target folder.
 
@@ -53,15 +56,6 @@ Download ActiveMQ from http://activemq.apache.org/activemq-5152-release.html
 Extract the folder and goto bin folder
 
 type "activemq start"
-
-### Project tech stack involves 
-
-Java 8,
-Maven 3.5,
-Spring 4.1.4,
-MySQL 5 +,
-ActiveMQ 5.15.2,
-JBOSS AS 7.0.0 Final
 
 The project exposes two APIS - one is a restful webservice and the other is SOAP webservice.
 
