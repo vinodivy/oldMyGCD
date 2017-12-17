@@ -7,8 +7,11 @@ Java 8,
 Maven 3.5,
 
 Spring 4.1.4,
+
 MySQL 5 +,
+
 ActiveMQ 5.15.2,
+
 JBOSS AS 7.0.0 Final
 
 # Deployment methods:
