@@ -2,9 +2,10 @@
 
 # Project tech stack involves 
 
-Java 8, 
-Maven 3.5
+Java 8,
+
 Maven 3.5,
+
 Spring 4.1.4,
 MySQL 5 +,
 ActiveMQ 5.15.2,
