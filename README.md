@@ -19,8 +19,11 @@ MyGCD-master folder and run from cmd prompt "mvn clean install".
 
 .ear file will be generated in GCDEar project's target folder.
 
-• Deploy the file into JBOSS AS 7.0.0 server. Setup Jboss 7 server in eclipse and right click on the GCDEar project and 
-Select Run As -> Run on server and select the configured Jboss 7 server and click finish.
+Install JBOSS AS 7 into any folder of your machine. Let that folder be your jboss_home folder.
+
+Place the .ear file in jboss_server_home/standalone/deployments folder.
+
+Start the server by going to jboss_home/bin and type standalone.bat
 
 ## Database setup
 
