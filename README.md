@@ -16,7 +16,7 @@ JBOSS AS 7.0.0 Final
 
 # Deployment methods:
 
-Download the zip package from git and unzip. You can run either from eclipse or Windows Command Prompt
+Download the zip package from git and unzip.
 
 After unzipping, you should be able to view three projects
 • GCDEar
