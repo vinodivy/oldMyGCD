@@ -22,6 +22,9 @@ public class InputNumber implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
+	@Column(name="key")
+	private String key;
 
 	@NotNull
 	@Digits(fraction = 0, integer = 12)
@@ -65,14 +68,23 @@ public class InputNumber implements Serializable {
 
 	public void setNumber2(int number2) {
 		this.number2 = number2;
+	}	
+
+	public String getKey() {
+		return key;
+	}
+
+	public void setKey(String key) {
+		this.key = key;
 	}
 
 	@Override
 	public String toString() {
 		StringBuilder str = new StringBuilder();
 		str.append("Generated ID: " + getId());
-		str.append("Number-1: " + getNumber1());
-		str.append("Number-2: " + getNumber2());
+		str.append(" Number-1: " + getNumber1());
+		str.append(" Number-2: " + getNumber2());
+		str.append(" key " + getKey());
 		return str.toString();
 	}
 

@@ -43,6 +43,7 @@ public class Gcdservice {
 			gcd = calculateGCD(numbers.getNumber1(), numbers.getNumber2());
 		    GCD gcdmodel = new GCD();
 		    gcdmodel.setGcd(gcd);
+		    gcdmodel.setKey(numbers.getKey());
 		    gcdDao.insertGCD(gcdmodel);
 		}
 		else {

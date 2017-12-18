@@ -30,8 +30,8 @@ public class GCDDaoImpl implements GCDDao {
 
 	public int insertGCD(GCD gcd) {
 		log.debug("Inserting calculated gcd into database..");
-		int count = jdbcTemplate.update("INSERT INTO gcd(id, gcd)VALUES(?,?)",
-				new Object[] { gcd.getId(), gcd.getGcd() });
+		int count = jdbcTemplate.update(" INSERT INTO gcd(id, gcd, `key`)VALUES(?, ?, ?)",
+				new Object[] { gcd.getId(), gcd.getGcd(), gcd.getKey()});
 		return count;
 
 	}

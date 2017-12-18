@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.RequestHeader;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -40,14 +41,15 @@ public class NumberController {
 	}
 
 	@RequestMapping(value = "/push", method = RequestMethod.POST,  headers = "Accept=application/json")
-	public ResponseEntity<String> push(@RequestParam Integer i1, @RequestParam Integer i2) {
+	public ResponseEntity<String> push(@RequestParam Integer i1, @RequestParam Integer i2, 
+	                                   @RequestHeader(value="key" , required=false) String key) {
 		log.debug("Invoking the push method...");
 		HttpHeaders headers = new HttpHeaders();
 		if (i1==0||i2==0) {
 			log.debug("Numbers cannot be zero..");
 			return new ResponseEntity<String>(HttpStatus.BAD_REQUEST);
 		}
-		numberService.push(i1, i2);
+		numberService.push(i1, i2, key);
 		return new ResponseEntity<String>("Success", headers, HttpStatus.CREATED);
 	}
 }

@@ -25,6 +25,9 @@ public class GCD implements Serializable {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
+	
+	@Column(name="key")
+	private String key;
 
 	@NotNull
 	@Digits(fraction = 0, integer = 12)
@@ -55,11 +58,20 @@ public class GCD implements Serializable {
 		this.gcd = gcd;
 	}
 	
+	public String getKey() {
+		return key;
+	}
+
+	public void setKey(String key) {
+		this.key = key;
+	}
+
 	@Override
 	public String toString() {
 		StringBuilder str = new StringBuilder();
-		str.append("ID " + getId());
-		str.append("GCD " + getGcd());
+		str.append(" ID " + getId());
+		str.append(" GCD " + getGcd());
+		str.append(" key " + getKey());
 		return str.toString();
 	}
 }

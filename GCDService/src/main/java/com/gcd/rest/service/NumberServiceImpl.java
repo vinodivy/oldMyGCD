@@ -27,7 +27,7 @@ public class NumberServiceImpl implements NumberService {
 		return numberList;
 	}
 
-	public void push(Integer i1, Integer i2) {
+	public void push(Integer i1, Integer i2, String key) {
 		log.debug("Invoking the Number service push method..");				
 		
 		InputNumber number = new InputNumber();

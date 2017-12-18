@@ -45,10 +45,10 @@ public class NumberDaoImpl implements NumberDao {
 
 	public int push(InputNumber inputNumber) {
 		log.debug("Pushing the numbers "+inputNumber.getNumber1()+ " "+inputNumber.getNumber2()+
-				" to the database.");
+				" "+inputNumber.getKey()+" to the database.");
 		int count = jdbcTemplate.update(
-				"INSERT INTO inputnumber(number1, number2)VALUES(?,?)", new Object[] {
-						inputNumber.getNumber1(), inputNumber.getNumber2() });
+				"INSERT INTO inputnumber (`key`, number1, number2) VALUES (?, ?, ?)", new Object[] {
+						inputNumber.getKey(), inputNumber.getNumber1(), inputNumber.getNumber2()});
 		return count;
 	}
 }
