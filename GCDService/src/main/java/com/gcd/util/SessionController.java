@@ -18,7 +18,7 @@ import org.springframework.stereotype.Component;
 public class SessionController {
 
 	private static final long DURATION = TimeUnit.MINUTES.toMillis(3); 
-	private static final Semaphore semaphore = new Semaphore(2);
+	private static final Semaphore semaphore = new Semaphore(20);
 	private static Map<String, Long> account = new HashMap<String, Long>();
 	private static final Logger log = Logger.getLogger(SessionController.class);
 
