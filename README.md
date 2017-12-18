@@ -44,18 +44,22 @@ Modify the database schema/username/password in the GCDService project -> src/re
 
 Create the following tables using the DDL commands.
 
-CREATE TABLE `gcd`.`gcd` (
+CREATE TABLE gcd.`gcd` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `key` varchar(52) DEFAULT NULL,
   `gcd` int(12) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=24 DEFAULT CHARSET=utf8;
 
-CREATE TABLE `gcd`.`inputnumber` (
+CREATE TABLE gcd.`inputnumber` (
   `id` bigint(20) unsigned NOT NULL AUTO_INCREMENT,
+  `key` varchar(52) DEFAULT NULL,
   `number1` int(11) DEFAULT NULL,
   `number2` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB AUTO_INCREMENT=125 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=153 DEFAULT CHARSET=utf8;
+
+The key column in each database will hold the user's generated session key. This key will be used in the application's session to check the number of concurrent users in the system.
 
 ## ActiveMQ setup
 
