@@ -14,6 +14,8 @@ ActiveMQ 5.15.2,
 
 JBOSS AS 7.0.0 Final
 
+The system supports 20 concurrent users at any point of time.
+
 # Deployment methods:
 
 Download the zip package from git and unzip.
