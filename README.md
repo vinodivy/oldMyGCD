@@ -91,13 +91,15 @@ and type the following URL
 
 For local deployment:
 
-Rest services
+### Rest services
 
 http://localhost:8080/GCDService/rest/list
 
-http://localhost:8080/GCDService/rest/push
+http://localhost:8080/GCDService/rest/push (POST request with "key:"anystring" passed as a header)
 
-Soap Services
+(Example: http://localhost:8080/GCDService/rest/push?i1=20&i2=16 (request header key:abcdefg)
+
+### Soap Services
 
 http://localhost:8080/GCDService/endpoint/gcdService.wsdl
 
