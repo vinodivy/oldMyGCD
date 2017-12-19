@@ -97,7 +97,7 @@ http://localhost:8080/GCDService/rest/list
 
 http://localhost:8080/GCDService/rest/push (POST request with "key:"anystring" passed as a header)
 
-(Example: http://localhost:8080/GCDService/rest/push?i1=20&i2=16 (request header key:abcdefg)
+(Example: http://localhost:8080/GCDService/rest/push?i1=20&i2=16 (request header key:abcdefg. This is optional, in which case each POST will be considered as a new user request)
 
 ### Soap Services
 
