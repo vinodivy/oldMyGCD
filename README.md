@@ -98,3 +98,5 @@ http://localhost:8080/GCDService/rest/push
 Soap Services
 
 http://localhost:8080/GCDService/endpoint/gcdService.wsdl
+
+The GCD soapservice returns a zero when there are no more elements in queue to be consumed.
